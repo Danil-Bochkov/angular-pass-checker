@@ -21,6 +21,7 @@
     width: 68px;
     border-radius: 20px;
     display: inline-block;
+    background-color: grey;
 }
 
 .strength-section:not(:last-child) {
