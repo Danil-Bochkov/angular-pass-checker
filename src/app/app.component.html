@@ -9,7 +9,8 @@
   </div>
   <div
     class="strength-section"
-    [class.weak]="strength !== 'strong'"
+    [class.empty]="strength !== 'empty'"
+    [class.weak]="strength === 'empty'"
     [class.moderate]="strength === 'moderate'"
     [class.strong]="strength === 'strong'"
   >

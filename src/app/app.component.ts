@@ -19,7 +19,7 @@ export class PasswordStrengthComponent {
     if (this.password === '') {
       this.strength = '';
     } else if (!hasLength) {
-      this.strength = 'weak';
+      this.strength = 'empty';
     } else if (!hasLowerCase && !hasUpperCase && !hasNumber && !hasSymbol) {
       this.strength = 'weak';
     } else if ((hasLowerCase || hasUpperCase) && hasNumber && !hasSymbol) {

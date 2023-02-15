@@ -28,6 +28,10 @@
     margin-right: 5px;
 }
 
+.strength-section.empty {
+    background-color: grey;
+}
+
 .strength-section.weak {
     background-color: red;
 }
