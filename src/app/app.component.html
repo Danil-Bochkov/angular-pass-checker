@@ -1,0 +1,34 @@
+<div>
+  <div class="input-section">
+    <label>Password</label>
+    <input
+      type="password"
+      [(ngModel)]="password"
+      (ngModelChange)="calculateStrength()"
+    />
+  </div>
+  <div
+    class="strength-section"
+    [class.weak]="strength !== 'strong'"
+    [class.moderate]="strength === 'moderate'"
+    [class.strong]="strength === 'strong'"
+  >
+    <span class="strength-label">Weak</span>
+  </div>
+  <div
+    class="strength-section"
+    [class.weak]="strength === 'moderate'"
+    [class.moderate]="strength === 'moderate' || strength === 'strong'"
+    [class.strong]="strength === 'strong'"
+  >
+    <span class="strength-label">Medium</span>
+  </div>
+  <div
+    class="strength-section"
+    [class.weak]="strength === 'strong'"
+    [class.moderate]="strength === 'strong'"
+    [class.strong]="strength === 'strong'"
+  >
+    <span class="strength-label">Strong</span>
+  </div>
+</div>

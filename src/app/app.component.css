@@ -1,0 +1,44 @@
+.input-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-section input {
+    max-width: 200px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.input-section input:focus {
+    transform: scale(1.03);
+}
+
+.strength-section {
+    height: 10px;
+    width: 68px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.strength-section:not(:last-child) {
+    margin-right: 5px;
+}
+
+.strength-section.weak {
+    background-color: red;
+}
+
+.strength-section.moderate {
+    background-color: yellow;
+}
+
+.strength-section.strong {
+    background-color: green;
+}
+
+.strength-label {
+    display: none;
+}
